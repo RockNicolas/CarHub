@@ -9,7 +9,6 @@ interface InputProps{
     rules?:RegisterOptions;
 }
 
-
 export function Input({name, placeholder, type, register, rules, error }: InputProps){
     return(
         <div>
