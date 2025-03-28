@@ -4,11 +4,10 @@ import { Login } from './pages/Login/Login'
 import { Register } from './pages/Register/Register'
 import { Dashboard } from './pages/Dashboard/Dashboard'
 import { New } from './pages/Dashboard/new/New'
-import { Car, CarDetail } from './pages/Car/Car'
-import { Header } from './components/Header/Header'
+import { CarDetail } from './pages/Car/Car'
 import { Layout } from './components/Layouts/Layouts'
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     element: <Layout/>,
     children: [
@@ -19,7 +18,23 @@ const router = createBrowserRouter([
         {
           path: "/car/:id",
           element: <CarDetail/>
+        },
+        {
+          path: "/dashboard",
+          element: <Dashboard/>
+        },
+        {
+          path: "/dashboard/new",
+          element: <New/>
         }
     ]
+  },
+  {
+    path: "/login",
+    element: <Login/>
+  },
+  {
+    path: "/register",
+    element: <Register/>
   }
 ])
