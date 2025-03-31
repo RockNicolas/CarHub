@@ -1,10 +1,11 @@
-
+import { Container } from '../../../components/container/Container'
+import { DashboardHeader } from '../../../components/PainellHeader/PainelHeader'
 
 export function New(){
     return (
-      <>
-          <h1 className="">Cadastrar carro</h1>
-      </>
+      <Container>
+          <DashboardHeader/>
+      </Container>
     )
   }
     
