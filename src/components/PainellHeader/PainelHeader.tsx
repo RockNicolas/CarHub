@@ -18,7 +18,7 @@ export function DashboardHeader(){
             </Link>
 
             <button  className='ml-auto' onClick={handleLogout}>
-                Sait da conta
+                Sair da conta
             </button>
         </div>
     )
